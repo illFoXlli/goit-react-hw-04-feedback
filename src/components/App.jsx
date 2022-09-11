@@ -1,16 +1,23 @@
+import Statistics from './Statistics/Statistics';
+import { Box } from './Box';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
+    <Box
+      width="800px"
+      height="300px"
+      bg="tomato"
+      m="auto"
+      mt="50px"
+      borderRadius={8}
     >
-      React homework template
-    </div>
+      <Statistics
+        valueGood={0}
+        valueNeutral={0}
+        valueBad={0}
+        valueTotal={0}
+        valuePositive={0}
+      />
+    </Box>
   );
 };
