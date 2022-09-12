@@ -1,4 +1,4 @@
-import Statistics from './Statistics/Statistics';
+import Statistics from './Statistics';
 import { Box } from './Box';
 
 export const App = () => {

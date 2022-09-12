@@ -27,6 +27,8 @@ class Statistisc extends React.Component {
     });
   };
 
+  toggal = () => {};
+
   сlickOnButtonGood = () => {
     this.clickStyleGood = true;
     this.clickStyleNeutral = false;

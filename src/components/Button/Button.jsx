@@ -101,14 +101,13 @@ export function Button(props) {
 }
 
 Button.propTypes = {
-  name: PropTypes.objectOf(PropTypes.number.isRequired),
   children: PropTypes.string.isRequired,
-  onIncrementGood: PropTypes.func.isRequired,
-  onIncrementNeutral: PropTypes.func.isRequired,
-  onIncrementBad: PropTypes.func.isRequired,
-  style: PropTypes.object.isRequired,
-  noStyle: PropTypes.object.isRequired,
-  // clickStyleGood: PropTypes.bool.isRequired,
-  // clickStyleNeutral: PropTypes.bool.isRequired,
-  // clickStyleBad: PropTypes.bool.isRequired,
+  onIncrementGood: PropTypes.func,
+  onIncrementNeutral: PropTypes.func,
+  onIncrementBad: PropTypes.func,
+  style: PropTypes.object,
+  noStyle: PropTypes.object,
+  clickStyleGood: PropTypes.bool,
+  clickStyleNeutral: PropTypes.bool,
+  clickStyleBad: PropTypes.bool,
 };
