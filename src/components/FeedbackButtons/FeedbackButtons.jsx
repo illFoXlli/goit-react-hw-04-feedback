@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
 
-const FeedbackButtons = ({ btnOptions, onBtnClick }) => {
-  return btnOptions.map(valio => {
+const FeedbackButtons = ({
+  options,
+  onBtnClick,
+}) => {
+  
+
+
+  return options.map(valio => {
     return (
       <button
         key={valio}
@@ -16,9 +22,8 @@ const FeedbackButtons = ({ btnOptions, onBtnClick }) => {
 };
 
 FeedbackButtons.propTypes = {
-  btnOptions: PropTypes.arrayOf(PropTypes.string.isRequired)
-    .isRequired,
-  onBtnClick: PropTypes.func.isRequired,
+  btnOptions: PropTypes.array,
+  onBtnClick: PropTypes.func,
 };
 
 export default FeedbackButtons;
